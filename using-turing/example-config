@@ -1,0 +1,21 @@
+# Change the netid to your's and path to your cycle private key.
+Host cycles.cs.princeton.edu cycles
+  HostName cycles.cs.princeton.edu
+  User aas4
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/id_cycle
+  ControlMaster auto
+  ControlPersist yes
+  ControlPath ~/.ssh/sockets/%p-%h-%r
+  ServerAliveInterval 300
+
+Host turing.cs.princeton.edu turing
+  User aas4
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/id_cycle
+  HostName turing.cs.princeton.edu
+  ProxyJump aas4@cycles.cs.princeton.edu
+  ControlMaster auto
+  ControlPersist yes
+  ControlPath ~/.ssh/sockets/%p-%h-%r
+
