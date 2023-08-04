@@ -1,0 +1,3 @@
+[submodule "snakemake-tutorial2"]
+	path = snakemake-tutorial2
+	url = https://github.com/balabanmetin/snakemake-tutorial2.git
